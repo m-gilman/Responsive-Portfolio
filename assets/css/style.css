@@ -298,13 +298,14 @@ footer {
 /* main */
 #main-container {
   padding-top: 120px;
-  width: 400px;
-}
+  width: 450px;
+  }
 
 .main-section {
   float: none;
   margin-bottom: 0 0 20px;
-}
+  
+  }
 
 
 h1 {
@@ -338,8 +339,19 @@ h1 {
   width: 42px;
   height: 42px;
   margin-top: 2px;
-  
-  /* margin-top: 8px;
-  margin-right: 5px; */
-  
+   
+}
+
+/* portfolio page */
+.work {
+  float: none;
+  width: 100%;  
+  }
+
+.work h3 {
+  padding: 10px; 
+}
+
+#message {
+  height: 150px;
 }
