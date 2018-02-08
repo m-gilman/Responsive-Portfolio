@@ -239,3 +239,107 @@ input[type=submit] {
 }
 
 /* MEDIA QUERIES */
+
+/* These rules take effect when the browser's width is either 768px or less. */
+@media all and (max-width: 980px) {
+  body {
+    background-color: red;
+  }
+}
+
+
+/*
+  These rules take effect when the browser's width is either 768px or less.*/
+  @media all and (max-width: 768px) {
+    body {
+      background-color: green;
+    }
+  }
+
+
+/* These rules take effect when the browser's width is either 640px or less. */
+@media all and (max-width:640px) {
+  body {
+    font-size: 12px;
+    line-height: 24px;
+  
+    background-color: purple;
+  }
+  #logo {
+    width: 100%;
+    height: 55px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 60px;
+  }  
+
+  nav {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 639px;
+  }
+  
+  nav a {
+    text-align: center;
+    line-height: 45px;
+    width: 100px;
+    }
+  
+    
+  /* footer */
+footer {
+  font-size: 10px;
+  
+  padding: 15px 0;
+    border-top: 6px solid #4aaaa5;
+}
+
+/* main */
+#main-container {
+  padding-top: 120px;
+  width: 400px;
+}
+
+.main-section {
+  float: none;
+  margin-bottom: 0 0 20px;
+}
+
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  line-height: 29px;
+}
+
+.auth-image {
+  float: none;
+  width: 75%;
+  margin: 0 50px 0 50px;
+  }
+
+/* sidebar */
+.sidebar {
+  float: none;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  }
+
+  h3,
+.sidebar h2 {
+  padding-bottom: 8px;
+  font-size: 16px;
+}
+
+.social {
+  width: 42px;
+  height: 42px;
+  margin-top: 2px;
+  
+  /* margin-top: 8px;
+  margin-right: 5px; */
+  
+}
