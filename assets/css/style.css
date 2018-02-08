@@ -1,216 +1,239 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #777777;
-    background: url(../images/wild_flowers.png);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777;
+  background: url("../images/concrete_seamless.png");
 }
 
-/**** Classes -can be applied anywhere ****/
+* {
+  box-sizing: border-box;
+}
+
+/* general */
+
 .container {
-    width: 960px;
-    margin: auto;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
 }
 
-.no-right-border {
-    border-right: none;
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
 }
 
-/* for photos that float left */
-.left_article_photo {
-    margin: 20px 20px 0 20px;
-    float: left;
-    border: lightgray 1px solid;
+p:last-child {
+  margin-bottom: 0;
 }
 
-
-/***** Elements *****/
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 34px;   
-}
-
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 32px;
-    font-weight: bold;
-}
-
+h1,
+h2,
 h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-    font-weight: bold;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
 }
 
-h4 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
 }
 
-/**** Header (on all pages) ****/
-header {
-    background: #ffffff;
-    height: 90px;
-    border-bottom: #cccccc 2px solid;
+h2,
+h3 {
+  font-size: 22px;
 }
 
-.my_name {
-    float: left;
-    background: #4aaaa5;
-    color: #ffffff;
-    width: 300px;
-    line-height: 90px;
-    font-weight: bold;
-    text-align: center;
+/* header */
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
 }
 
-header nav {
-    text-decoration: none;
-    float: right;
-    margin-top: 36px;
-    width: 270px;
+#logo {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #a5a5a3;
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
 }
 
-header li {
-    display: inline;
-    margin-right: 20px;
-    padding-right: 20px;
-    border-right: 1px solid #dddddd;
+nav a:first-child {
+  border-left: 0 none;
 }
 
-article {
-    float: left;
-    background: #ffffff;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    margin: 30px 0;
-    color: #777777;
-    height: auto;
-    width: 650px;
-    overflow: hidden;
-}
-
-article h2 {
-    color:#4aaaa5;
-    line-height: 40px;
-    margin: 0 20px;
-    padding: 0px 20px 10px 20px;
-    border-bottom: 2px solid #dddddd;
-}
-
-article p {
-    margin: 20px;
-    line-height: 30px;
-}
-
-/****** Side Bar ******/
-
-#side_bar {
-    float: right;
-    background: #ffffff;
-    padding: 30px 10px;
-    color: #4aaaa5;
-    height: auto;
-    width: 270px;
-    margin-top: 30px;
-}
-
-#side_bar h3 {
-    margin: 10px 45px;
-    padding: 10px;
-    border-bottom: #cccccc 2px solid;
-}
-
-#side_bar .img_holder {
-    margin: 20px 45px;
-}
-
-#side_bar a {
-    text-decoration: none;}
+/* footer */
 
 footer {
-    clear: both;
-    background: #666666;
-    height: 50px;
-    padding-top: 45px;
-    border-top: 4px solid #4aaaa5;
-    text-align: center;
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
 }
 
-footer p {
-    color: lightgray;
-    font-size: 14px;
+/* sidebar */
+
+.sidebar {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
-/* PORTFOLIO */
-#portfolio_images {
-    margin-left: 20px;
-    margin-top: 20px;
+h3,
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
 }
 
-.img_with_banner {
-    position: relative;
-    float: left;
-    width: 275px;
-    margin: 10px;
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
 }
 
-.img_with_banner h4  {
-    position: absolute;
-    top: 75%;
-    width: 270px;
-    height: 37px;
-    text-align: center;
-    background: #4aaaa5;
-    color: #ffffff; 
-    line-height: 38px;
-    z-index: 100;
+.social:last-child {
+  margin-right: 0;
 }
 
-.img_with_banner img {
-    width: 270px;
-    
+/* main */
+
+#main-container {
+  padding-top: 130px;
 }
 
-/* CONTACT PAGE */
-.contact {
-    margin: 20px;
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
-.contact_name, .contact_email {
-    margin: 0 20px;
-    width: 580px;
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
 }
 
-.contact_message {
-    margin: 0 20px;
-    width: 580px;
-    height: 100px;
+.work:nth-child(even) {
+  margin-right: 40px;
 }
 
-.submit {
-    background: #4aaaa5;
-    line-height: 30px;
-    width: 70px;
-    font-size: 16px;
-    color: #ffffff;
-    margin: 10px;
-    border: none;
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
 }
 
-button:hover { 
-    background-color: purple; 
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
 }
 
-a:hover {
-    background: purple;
-    color: #ffffff;
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
 }
 
-h4:hover {
-    background-color: #FF4C4C;
+/* contact page */
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
 }
