@@ -10,6 +10,25 @@ body {
   box-sizing: border-box;
 }
 
+/* sticky footer */
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
+
 /* general */
 
 .container {
@@ -241,30 +260,137 @@ input[type=submit] {
 /* MEDIA QUERIES */
 
 /* These rules take effect when the browser's width is either 768px or less. */
-@media all and (max-width: 980px) {
+@media screen and (min-width: 769px) and (max-width: 980px) {
   body {
-    background-color: red;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  /* header */
+  #logo {
+    margin-left: 10%;
+  }  
+
+  nav {
+    margin-right: 10%;
+  }
+  
+  /* main */
+  #main-container {
+    max-width: 750px;
+  }
+
+  .main-section {
+    max-width: 400px;
+  }
+
+  .auth-image {
+    float: none;
+    width: 65%;
+    margin: 0 50px 0 50px;
+  } 
+
+  /* sidebar */
+  .sidebar {
+    max-width: 250px;
+    padding: 10px;
+    text-align: center;
+    height: 175px;
+    margin-right: 50px;
+  }
+
+    h3,
+  .sidebar h2 {
+    padding: 8px 0;
+    font-size: 20px;
+  }
+
+  .social {
+    width: 52px;
+    height: 52px;
+  }
+
+  /* Portfolio Page */
+  .work {
+    float: none;
+    width: 100%;  
+  }
+
+  .work h3 {
+    padding: 10px; 
+  }
+
+  #message {
+    height: 150px;
   }
 }
 
+/*  These rules take effect when the browser's width is either 768px or less.*/
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  #logo {
+    margin-left: 3%;
+  }  
 
-/*
-  These rules take effect when the browser's width is either 768px or less.*/
-  @media all and (max-width: 768px) {
-    body {
-      background-color: green;
-    }
+  nav {
+    margin-right: 5%;
+  }
+ 
+  h1 {
+    padding-bottom: 10px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #ddd;
+  }
+  
+  h2,
+  h3 {
+    font-size: 18px;
   }
 
+  /* main */
+  #main-container {
+    margin: 0px;
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .main-section {
+    max-width: none;
+    padding: 30px 30px 50px 30px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  
+  .auth-image {
+    width: 250px;
+  }
+
+  /* sidebar */
+  .sidebar {
+    float: left;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 20px;
+  }
+  
+  /* portfolio page */
+  .work h3 {
+    padding: 10px; 
+  }
+
+  /* Contact page */
+  #message {
+    height: 150px;
+  }
+}
 
 /* These rules take effect when the browser's width is either 640px or less. */
-@media all and (max-width:640px) {
+@media screen and (max-width:640px) {
   body {
     font-size: 12px;
     line-height: 24px;
-  
-    background-color: purple;
-  }
+   }
+
   #logo {
     width: 100%;
     height: 55px;
@@ -284,74 +410,73 @@ input[type=submit] {
     text-align: center;
     line-height: 45px;
     width: 100px;
-    }
+  }
   
     
   /* footer */
-footer {
-  font-size: 10px;
-  
-  padding: 15px 0;
+  footer {
+    font-size: 10px;
+    padding: 15px 0;
     border-top: 6px solid #4aaaa5;
-}
-
-/* main */
-#main-container {
-  padding-top: 120px;
-  width: 450px;
   }
 
-.main-section {
-  float: none;
-  margin-bottom: 0 0 20px;
-  
+  /* main */
+  #main-container {
+    padding-top: 120px;
+    width: 450px;
+  }
+
+  .main-section {
+    float: none;
+    margin-bottom: 0 0 20px;
   }
 
 
-h1 {
-  font-size: 20px;
-  margin-bottom: 8px;
-  padding-bottom: 5px;
-  line-height: 29px;
-}
-
-.auth-image {
-  float: none;
-  width: 75%;
-  margin: 0 50px 0 50px;
+  h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    line-height: 29px;
   }
 
-/* sidebar */
-.sidebar {
-  float: none;
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
+  .auth-image {
+    float: none;
+    width: 75%;
+    margin: 0 50px 0 50px;
+  }
+
+  /* sidebar */
+  .sidebar {
+    float: none;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
   }
 
   h3,
-.sidebar h2 {
-  padding-bottom: 8px;
-  font-size: 16px;
-}
-
-.social {
-  width: 42px;
-  height: 42px;
-  margin-top: 2px;
-   
-}
-
-/* portfolio page */
-.work {
-  float: none;
-  width: 100%;  
+  .sidebar h2 {
+    padding-bottom: 8px;
+    font-size: 16px;
   }
 
-.work h3 {
-  padding: 10px; 
-}
+  .social {
+    width: 42px;
+    height: 42px;
+    margin-top: 2px;
+  }
 
-#message {
-  height: 150px;
+  /* portfolio page */
+  .work {
+    float: none;
+    width: 100%;  
+  }
+
+  .work h3 {
+    padding: 10px; 
+  }
+
+  /* contact page */
+  #message {
+    height: 150px;
+  }
 }
